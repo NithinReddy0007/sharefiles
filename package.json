@@ -1,0 +1,12 @@
+{
+  "name": "sharefiles",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:worker": "npm --prefix worker run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "test:worker": "npm --prefix worker test",
+    "typecheck": "npm --prefix frontend run build && node frontend/node_modules/typescript/bin/tsc --project worker/tsconfig.json --noEmit"
+  }
+}
